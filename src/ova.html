@@ -4,117 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon Ball Fan - Peliculas</title>
-    <link rel="stylesheet" href="./styles/ova-videojuegos.css">
-    
+    <link href="output.css" rel="stylesheet" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
-<body>
-      <header>
-        <div class="cabecera">
-            <img src="./images/cabecera.png" alt="Imagen de inicio Dragon Ball">
-            <h1>Dragon Fann</h1>
-            <h2>La Super página sayajina definitiva</h2>
+<body class="bg-amber-50">
+    <!-- Cabecera -->
+    <header class="shadow-lg">
+        <div class="cabecera flex flex-col items-center bg-linear-to-b from-orange-400 to-yellow-300 py-6">
+            <img src="./images/cabecera.png" alt="Imagen de inicio Dragon Ball" class="max-w-full h-auto">
+            <h1 class="text-5xl font-bold text-red-800 mt-4 drop-shadow-lg">Dragon Fann</h1>
+            <h2 class="text-2xl text-red-700 mt-2 font-semibold">La Super página sayajina definitiva</h2>
         </div>
-        <nav>
-           <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="personajes.html">Personajes</a></li>
-                <li><a href="index.html#autor">Autor</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="ova.html">OVA/Películas</a></li>
-                <li><a href="videojuegos.html">Videojuegos</a></li>
-                <li><a href="formulario.html">Formulario</a></li>
-                <li><a href="multimedia.html">Multimedia</a></li>
+        <nav class="bg-red-950 shadow-md">
+            <ul class="flex justify-center gap-8 py-4">
+                <li class="text-white text-lg font-medium">
+                    <a href="index.html" class="hover:text-amber-400 transition-colors duration-300">Inicio</a>
+                </li>
+                <li class="text-white text-lg font-medium">
+                    <a href="ova.html" class="hover:text-amber-400 transition-colors duration-300">Películas</a>
+                </li>
             </ul>
         </nav> 
-      </header>
-      <main>
-      <a href="#inicio"><img src="./images/page_top.svg" alt="imagen para subir" id="subir"></a>
-        <section id="inicio">
-            
-            <header>
-                <h3>Películas y OVAs Principales</h3>
+    </header>
+
+    <!-- Cuerpo principal -->
+    <main class="max-w-7xl mx-auto">        
+        <section id="inicio" class="bg-yellow-200 mx-5 my-6 p-6 rounded-lg shadow-md">
+            <header class="mb-8 text-center">
+                <h3 class="text-3xl font-bold text-red-900">Películas y OVAs Principales</h3>
             </header>
 
-            <article>
-                <img src="images/peliculas/batallaDioses.png" alt="imagen de la batalla de los dioses">
-                <h4>Dragon Ball Z: La Batalla de los Dioses</h4>
-                <p><span class="strong">Año:</span> 2013</p>
-                <p>La primera película en 17 años supervisada por Toriyama. Introduce a <span class="strong">Bills</span>, el Dios de la Destrucción, y la transformación del <span class="strong">Super Saiyan God</span>.</p>
-            </article>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <article class="bg-amber-50 p-5 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <img src="images/peliculas/batallaDioses.png" alt="imagen de la batalla de los dioses" class="w-full h-48 object-cover rounded-lg shadow-lg mb-4">
+                    <h4 class="text-xl font-bold text-red-800 mb-2">Dragon Ball Z: La Batalla de los Dioses</h4>
+                    <p class="mb-2 text-sm"><span class="font-bold text-red-900">Año:</span> 2013</p>
+                    <p class="text-gray-800 text-sm leading-relaxed">La primera película en 17 años supervisada por Toriyama. Introduce a <span class="font-bold text-red-900">Bills</span>, el Dios de la Destrucción, y la transformación del <span class="font-bold text-red-900">Super Saiyan God</span>.</p>
+                </article>
 
-            <article>
-                <img src="images/peliculas/resurreccion_freezer.png" alt="imagen de la Resurrección de Freezer">
-                <h4>Dragon Ball Z: La Resurrección de Freezer</h4>
-                <p><span class="strong">Año:</span> 2015</p>
-                <p>Freezer regresa con un nuevo poder dorado. Goku y Vegeta deben enfrentarse nuevamente al tirano espacial con sus nuevas transformaciones <span class="strong">Super Saiyan Blue</span>.</p>
-            </article>
+                <article class="bg-amber-50 p-5 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <img src="images/peliculas/resurreccion_freezer.png" alt="imagen de la Resurrección de Freezer" class="w-full h-48 object-cover rounded-lg shadow-lg mb-4">
+                    <h4 class="text-xl font-bold text-red-800 mb-2">Dragon Ball Z: La Resurrección de Freezer</h4>
+                    <p class="mb-2 text-sm"><span class="font-bold text-red-900">Año:</span> 2015</p>
+                    <p class="text-gray-800 text-sm leading-relaxed">Freezer regresa con un nuevo poder dorado. Goku y Vegeta deben enfrentarse nuevamente al tirano espacial con sus nuevas transformaciones <span class="font-bold text-red-900">Super Saiyan Blue</span>.</p>
+                </article>
 
-            <article>
-                <img src="images/peliculas/super_broly.png" alt="imagen de Broly la película">
-                <h4>Dragon Ball Super: Broly</h4>
-                <p><span class="strong">Año:</span> 2018</p>
-                <p>Reimaginación oficial de Broly. Explora el origen de los <span class="strong">Saiyans</span> y presenta una batalla épica entre Goku, Vegeta y el legendario guerrero.</p>
-            </article>
+                <article class="bg-amber-50 p-5 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <img src="images/peliculas/super_broly.png" alt="imagen de Broly la película" class="w-full h-48 object-cover rounded-lg shadow-lg mb-4">
+                    <h4 class="text-xl font-bold text-red-800 mb-2">Dragon Ball Super: Broly</h4>
+                    <p class="mb-2 text-sm"><span class="font-bold text-red-900">Año:</span> 2018</p>
+                    <p class="text-gray-800 text-sm leading-relaxed">Reimaginación oficial de Broly. Explora el origen de los <span class="font-bold text-red-900">Saiyans</span> y presenta una batalla épica entre Goku, Vegeta y el legendario guerrero.</p>
+                </article>
 
-            <article>
-                <img src="images/peliculas/super_hero.png" alt="imagen de super hero">
-                <h4>Dragon Ball Super: Super Hero</h4>
-                <p><span class="strong">Año:</span> 2022</p>
-                <p><span class="strong">Gohan y Piccolo</span> son los protagonistas. La Patrulla Roja resurge con nuevos androides poderosos. Introduce transformaciones inéditas.</p>
-            </article>
+                <article class="bg-amber-50 p-5 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <img src="images/peliculas/super_hero.png" alt="imagen de super hero" class="w-full h-48 object-cover rounded-lg shadow-lg mb-4">
+                    <h4 class="text-xl font-bold text-red-800 mb-2">Dragon Ball Super: Super Hero</h4>
+                    <p class="mb-2 text-sm"><span class="font-bold text-red-900">Año:</span> 2022</p>
+                    <p class="text-gray-800 text-sm leading-relaxed"><span class="font-bold text-red-900">Gohan y Piccolo</span> son los protagonistas. La Patrulla Roja resurge con nuevos androides poderosos. Introduce transformaciones inéditas.</p>
+                </article>
 
-            <article>
-                <img src="images/peliculas/dragon.jpg" alt="imagen de el ataque del dragón">
-                <h4>Dragon Ball Z: El Ataque del Dragón</h4>
-                <p><span class="strong">Año:</span> 1995</p>
-                <p>También conocida como <span class="cursiva">"El puño del dragón"</span>. Una de las películas más populares de la era Z con villanos icónicos.</p>
-            </article>
+                <article class="bg-amber-50 p-5 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <img src="images/peliculas/dragon.jpg" alt="imagen de el ataque del dragón" class="w-full h-48 object-cover rounded-lg shadow-lg mb-4">
+                    <h4 class="text-xl font-bold text-red-800 mb-2">Dragon Ball Z: El Ataque del Dragón</h4>
+                    <p class="mb-2 text-sm"><span class="font-bold text-red-900">Año:</span> 1995</p>
+                    <p class="text-gray-800 text-sm leading-relaxed">También conocida como <span class="italic text-gray-700">"El puño del dragón"</span>. Una de las películas más populares de la era Z con villanos icónicos.</p>
+                </article>
 
-            <article>
-                <img src="images/peliculas/rivales.webp" alt="imagen de los rivales más poderosos">
-                <h4>Dragon Ball Z: Los Rivales más Poderosos</h4>
-                <p><span class="strong">Año:</span> 1991</p>
-                <p>Introduce a <span class="strong">Cooler</span>, el hermano mayor de Freezer, quien busca venganza contra los Saiyans.</p>
-            </article>
+                <article class="bg-amber-50 p-5 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <img src="images/peliculas/rivales.webp" alt="imagen de los rivales más poderosos" class="w-full h-48 object-cover rounded-lg shadow-lg mb-4">
+                    <h4 class="text-xl font-bold text-red-800 mb-2">Dragon Ball Z: Los Rivales más Poderosos</h4>
+                    <p class="mb-2 text-sm"><span class="font-bold text-red-900">Año:</span> 1991</p>
+                    <p class="text-gray-800 text-sm leading-relaxed">Introduce a <span class="font-bold text-red-900">Cooler</span>, el hermano mayor de Freezer, quien busca venganza contra los Saiyans.</p>
+                </article>
 
-            <article>
-                <img src="images/peliculas/fusion.webp" alt="imagen de La Fusión de Goku y Vegeta" >
-                <h4>Dragon Ball Z: La Fusión de Goku y Vegeta</h4>
-                <p><span class="strong">Año:</span> 1995</p>
-                <p>Presenta la técnica de fusión con los pendientes <span class="strong">Pothala</span> y la batalla contra <span class="strong">Janemba</span> en el inframundo.</p>
-            </article>
+                <article class="bg-amber-50 p-5 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <img src="images/peliculas/fusion.webp" alt="imagen de La Fusión de Goku y Vegeta" class="w-full h-48 object-cover rounded-lg shadow-lg mb-4">
+                    <h4 class="text-xl font-bold text-red-800 mb-2">Dragon Ball Z: La Fusión de Goku y Vegeta</h4>
+                    <p class="mb-2 text-sm"><span class="font-bold text-red-900">Año:</span> 1995</p>
+                    <p class="text-gray-800 text-sm leading-relaxed">Presenta la técnica de fusión con los pendientes <span class="font-bold text-red-900">Pothala</span> y la batalla contra <span class="font-bold text-red-900">Janemba</span> en el inframundo.</p>
+                </article>
 
-            <article>
-                <img src="images/peliculas/erradicar.webp" alt="imagen de El Plan para Erradicar a los Saiyans">
-                <h4>Dragon Ball Z: El Plan para Erradicar a los Saiyans</h4>
-                <p><span class="strong">Año:</span> 1993/2010</p>
-                <p>OVA especial que enfrenta a los guerreros Z contra clones de antiguos enemigos. Rehecha en 2010 con animación mejorada.</p>
-            </article>
+                <article class="bg-amber-50 p-5 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <img src="images/peliculas/erradicar.webp" alt="imagen de El Plan para Erradicar a los Saiyans" class="w-full h-48 object-cover rounded-lg shadow-lg mb-4">
+                    <h4 class="text-xl font-bold text-red-800 mb-2">Dragon Ball Z: El Plan para Erradicar a los Saiyans</h4>
+                    <p class="mb-2 text-sm"><span class="font-bold text-red-900">Año:</span> 1993/2010</p>
+                    <p class="text-gray-800 text-sm leading-relaxed">OVA especial que enfrenta a los guerreros Z contra clones de antiguos enemigos. Rehecha en 2010 con animación mejorada.</p>
+                </article>
+            </div>
         </section>
-        </main>
-        <footer>
-        <div>
-            <h4>Redes Sociales</h4>
-            <ul>
-                <li><a href="https://x.com/DB_official_en" target="_blank"><img src="images/X_db.jpg" alt="Cuenta oficial de Dragon Ball en X"></a></li>
-                <li><a href="https://x.com/toyotaro_vjump?lang=es" target="_blank"><img src="images/x_toyotaro.jpg" alt="Cuenta de Toyotaro en X"></a></li>
-                <li><a href="https://x.com/mangaplus_o?lang=en" target="_blank"><img src="images/x_manga_plus.png" alt="Cuenta de Manga Plus en X"></a>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-red-950 mt-8 p-6">
+        <div class="text-white mb-6">
+            <h4 class="text-xl font-bold mb-4">Redes Sociales</h4>
+            <ul class="flex flex-row gap-4 flex-wrap justify-center md:justify-start">
+                <li class="w-32 h-32 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-300">
+                    <a href="https://x.com/DB_official_en" target="_blank" class="block w-full h-full">
+                        <img src="images/X_db.jpg" alt="Cuenta oficial de Dragon Ball en X" class="w-full h-full object-cover">
+                    </a>
+                </li>
+                <li class="w-32 h-32 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-300">
+                    <a href="https://x.com/toyotaro_vjump?lang=es" target="_blank" class="block w-full h-full">
+                        <img src="images/x_toyotaro.jpg" alt="Cuenta de Toyotaro en X" class="w-full h-full object-cover">
+                    </a>
+                </li>
+                <li class="w-32 h-32 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-300">
+                    <a href="https://x.com/mangaplus_o?lang=en" target="_blank" class="block w-full h-full">
+                        <img src="images/x_manga_plus.png" alt="Cuenta de Manga Plus en X" class="w-full h-full object-cover">
+                    </a>
                 </li>
             </ul>
         </div>
 
-        <div>
-            <h4>Contacto</h4>
-            <address>
-                <p>Correo: alvaro@gmail.com</p>
-                <p>Teléfono:123-123-123</p>
+        <div class="text-white mb-6">
+            <h4 class="text-xl font-bold mb-3">Contacto</h4>
+            <address class="not-italic space-y-1">
+                <p class="hover:text-amber-400 transition-colors">
+                    <span class="font-semibold">Correo:</span> alvaro@gmail.com
+                </p>
+                <p class="hover:text-amber-400 transition-colors">
+                    <span class="font-semibold">Teléfono:</span> 123-123-123
+                </p>
             </address>
         </div>
 
-        <div>
-            <p>&copy; 2025 Dragon Ball Fan. Designed by Álvaro Contreras Ballesteros</p>
-            <p>Dragon Ball es propiedad de Akira Toriyama. Esta es una página fan.</p>
+        <div class="text-white border-t border-red-800 pt-4">
+            <p class="text-sm mb-1">
+                &copy; 2025 Dragon Ball Fan. Designed by Álvaro Contreras Ballesteros
+            </p>
+            <p class="text-sm text-gray-300">
+                Dragon Ball es propiedad de Akira Toriyama. Esta es una página fan.
+            </p>
         </div>
     </footer>
 </body>
