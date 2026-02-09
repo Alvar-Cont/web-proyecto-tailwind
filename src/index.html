@@ -10,83 +10,90 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <title>Dragon Ball Fan - Inicio</title>
   </head>
-  <body>
+  <body class="bg-amber-50">
     <!-- Cabecera -->
-    <header>
-      <div class="cabecera flex flex-col items-center">
-        <img src="./images/cabecera.png" alt="Imagen de inicio Dragon Ball" />
-        <h1>Dragon Fann</h1>
-        <h2>La Super página sayajina definitiva</h2>
+    <header class="shadow-lg">
+      <div class="cabecera flex flex-col items-center bg-gradient-to-b from-orange-400 to-yellow-300 py-6">
+        <img src="./images/cabecera.png" alt="Imagen de inicio Dragon Ball" class="max-w-full h-auto" />
+        <h1 class="text-5xl font-bold text-red-800 mt-4 drop-shadow-lg">Dragon Fann</h1>
+        <h2 class="text-2xl text-red-700 mt-2 font-semibold">La Super página sayajina definitiva</h2>
       </div>
-      <nav class="bg-red-950">
-        <ul class="flex justify-center gap-5">
-          <li class="text-white"><a href="index.html" class="hover:text-amber-400">Inicio</a></li>
-          <li class="text-white"><a href="historia.html" class="hover:text-amber-400">Historia</a></li>
+      <nav class="bg-red-950 shadow-md">
+        <ul class="flex justify-center gap-8 py-4">
+          <li class="text-white text-lg font-medium">
+            <a href="index.html" class="hover:text-amber-400 transition-colors duration-300">Inicio</a>
+          </li>
+          <li class="text-white text-lg font-medium">
+            <a href="ova.html" class="hover:text-amber-400 transition-colors duration-300">Peliculas</a>
+          </li>
         </ul>
       </nav>
     </header>
+
     <!-- Cuerpo principal -->
-    <main class="flex flex-col gap-5">
+    <main class="flex flex-col gap-5 max-w-7xl mx-auto">
       <!-- Sección de introducción -->
-      <section id="inicio" class="bg-yellow-200 mx-5 my-3 p-5 flex flex-col items-center">
-        <header>
-          <h3>Bienvenido a Dragon Ball Fan</h3>
+      <section id="inicio" class="bg-yellow-200 mx-5 my-3 p-6 rounded-lg shadow-md flex flex-col items-center">
+        <header class="mb-4">
+          <h3 class="text-3xl font-bold text-red-900 text-center">Bienvenido a Dragon Ball Fan</h3>
         </header>
-        <article>
-          <header>
-            <h4>Sobre este proyecto</h4>
+        <article class="text-center max-w-3xl">
+          <header class="mb-3">
+            <h4 class="text-2xl font-semibold text-red-800">Sobre este proyecto</h4>
           </header>
-          <p>
+          <p class="mb-3 text-gray-800 leading-relaxed">
             Este proyecto es una página de referencia dedicada a
-            <span class="font-bold">Dragon Ball</span>, una de las series de anime
+            <span class="font-bold text-red-900">Dragon Ball</span>, una de las series de anime
             y manga más icónicas de todos los tiempos. Aquí encontrarás
             información sobre personajes, historia, películas y mucho más.
           </p>
-          <p>
+          <p class="text-gray-800 leading-relaxed">
             Dragon Ball fue creado por Akira Toriyama y ha cautivado a millones
             de fans alrededor del mundo desde su debut en 1984.
           </p>
         </article>
       </section>
+
       <!-- Sección del autor -->
-      <section id="autor" class="bg-yellow-200 mx-5 flex flex-col items-center p-5">
-        <header>
-          <h3>Autor</h3>
+      <section id="autor" class="bg-yellow-200 mx-5 rounded-lg shadow-md flex flex-col items-center p-6">
+        <header class="mb-4">
+          <h3 class="text-3xl font-bold text-red-900">Autor</h3>
         </header>
-        <article class="bg-amber-50 p-5">
-          <figure class="flex flex-col justify-center">
-            <img class="w-7xl"
+        <article class="bg-amber-50 p-6 rounded-lg shadow-inner w-full max-w-5xl">
+          <figure class="flex flex-col justify-center mb-6">
+            <img 
+              class="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
               src="./images/Mural_de_Akira_Toriyama_en_La_Victoria,_Lima.webp"
               alt="Mural de Akira Toriyama en La Victoria, Lima. Por Mayimbú - Trabajo propio, CC BY-SA 4.0"
             />
-            <figcaption>
+            <figcaption class="text-center text-sm text-gray-600 mt-3 italic">
               Mural de Akira Toriyama en La Victoria, Lima. Por Mayimbú
             </figcaption>
           </figure>
-          <div>
-            <h4>Akira Toriyama</h4>
-            <p>
+          <div class="mb-6">
+            <h4 class="text-2xl font-bold text-red-800 mb-3">Akira Toriyama</h4>
+            <p class="mb-3 text-gray-800 leading-relaxed">
               Akira Toriyama
-              <span class="italic"
-                >(Nagoya, Prefectura de Aichi, 5 de abril de 1955 - 1 de marzo
-                de 2024)</span
-              >
+              <span class="italic text-gray-700">
+                (Nagoya, Prefectura de Aichi, 5 de abril de 1955 - 1 de marzo
+                de 2024)
+              </span>
               fue un mangaka y diseñador de personajes japonés. Primero alcanzó
               reconocimiento popular tras crear la serie de manga
-              <span class="italic">Dr. Slump</span>, y actuar como diseñador de
+              <span class="italic font-medium">Dr. Slump</span>, y actuar como diseñador de
               personajes para videojuegos, tales como la serie
-              <span class="italic"
-                >Dragon Quest, Chrono Trigger y Blue Dragon</span
-              >.
+              <span class="italic font-medium">
+                Dragon Quest, Chrono Trigger y Blue Dragon
+              </span>.
             </p>
-            <p>
+            <p class="mb-3 text-gray-800 leading-relaxed">
               Toriyama es considerado uno de los autores más importantes en la
               historia del manga, especialmente por la creación de Dragon Ball,
               que comenzó su serialización en 1984 en la revista Weekly Shōnen
               Jump.
             </p>
-            <p><span class="font-bold">Obras destacadas:</span></p>
-            <ul>
+            <p class="font-bold text-red-900 mb-2">Obras destacadas:</p>
+            <ul class="list-disc list-inside space-y-1 text-gray-800 ml-4">
               <li>Dragon Ball</li>
               <li>Dr. Slump</li>
               <li>Dragon Quest</li>
@@ -98,81 +105,108 @@
             src="https://www.google.com/maps/d/u/0/embed?mid=1HDuE_mHJUwQ6t_pEApAE_i7sxcd_TGA&ehbc=2E312F"
             width="640"
             height="480"
+            class="w-full max-w-3xl mx-auto rounded-lg shadow-lg border-2 border-gray-300"
           ></iframe>
         </article>
       </section>
+
       <!-- Aside con enlaces -->
-      <aside class="bg-yellow-200 mx-5 p-5 text-amber-900">
-        <h3 >Enlaces de Interés</h3>
-        <ul>
+      <aside class="bg-yellow-200 mx-5 p-6 rounded-lg shadow-md text-amber-900">
+        <h3 class="text-2xl font-bold text-red-900 mb-4">Enlaces de Interés</h3>
+        <ul class="space-y-3">
           <li>
-            <a href="https://www.selecta-vision.com" target="_blank"  class="hover:translate-x-1.5"
-              >Selecta Visión (distribuidora oficial)</a
+            <a 
+              href="https://www.selecta-vision.com" 
+              target="_blank"  
+              class="hover:translate-x-1.5 inline-block transition-transform duration-300 text-red-800 hover:text-red-600 font-medium underline decoration-2"
             >
+              Selecta Visión (distribuidora oficial)
+            </a>
           </li>
           <li>
             <a
               href="https://dragonball.fandom.com/es/wiki/Dragon_Ball_Wiki"
-              target="_blank"  class="hover:translate-x-1.5"
-              >Wiki Dragon Ball en español</a
+              target="_blank"  
+              class="hover:translate-x-1.5 inline-block transition-transform duration-300 text-red-800 hover:text-red-600 font-medium underline decoration-2"
             >
+              Wiki Dragon Ball en español
+            </a>
           </li>
           <li>
             <a
               href="https://www.toei-animation.com"
               target="_blank"
-              rel="noopener" class="hover:translate-x-1.5"
-              >Toei Animation (estudio de animación)</a
+              rel="noopener" 
+              class="hover:translate-x-1.5 inline-block transition-transform duration-300 text-red-800 hover:text-red-600 font-medium underline decoration-2"
             >
+              Toei Animation (estudio de animación)
+            </a>
           </li>
           <li>
-            <a href="https://mangaplus.shueisha.co.jp/updates" target="_blank" class="hover:translate-x-1.5"
-              >Leer Dragon Ball</a
+            <a 
+              href="https://mangaplus.shueisha.co.jp/updates" 
+              target="_blank" 
+              class="hover:translate-x-1.5 inline-block transition-transform duration-300 text-red-800 hover:text-red-600 font-medium underline decoration-2"
             >
+              Leer Dragon Ball
+            </a>
           </li>
         </ul>
       </aside>
     </main>
+
     <!-- Pie de página -->
-    <footer class="bg-red-950 mt-5 p-5">
-      <div class="text-white">
-        <h4>Redes Sociales</h4>
-        <ul class="flex flex-row">
-          <li class="w-40 h-40 rounded-full">
-            <a href="https://x.com/DB_official_en" target="_blank" 
-              ><img
+    <footer class="bg-red-950 mt-8 p-6">
+      <div class="text-white mb-6">
+        <h4 class="text-xl font-bold mb-4">Redes Sociales</h4>
+        <ul class="flex flex-row gap-4 flex-wrap justify-center md:justify-start">
+          <li class="w-32 h-32 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-300">
+            <a href="https://x.com/DB_official_en" target="_blank" class="block w-full h-full">
+              <img
                 src="images/X_db.jpg"
                 alt="Cuenta oficial de Dragon Ball en X"
-            /></a>
+                class="w-full h-full object-cover"
+              />
+            </a>
           </li>
-          <li class="w-40 h-40 rounded-full">
-            <a href="https://x.com/toyotaro_vjump?lang=es" target="_blank"
-              ><img src="images/x_toyotaro.jpg" alt="Cuenta de Toyotaro en X"
-            /></a>
+          <li class="w-32 h-32 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-300">
+            <a href="https://x.com/toyotaro_vjump?lang=es" target="_blank" class="block w-full h-full">
+              <img 
+                src="images/x_toyotaro.jpg" 
+                alt="Cuenta de Toyotaro en X"
+                class="w-full h-full object-cover"
+              />
+            </a>
           </li>
-          <li class="w-40 h-40 rounded-full">
-            <a href="https://x.com/mangaplus_o?lang=en" target="_blank"
-              ><img
+          <li class="w-32 h-32 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-300">
+            <a href="https://x.com/mangaplus_o?lang=en" target="_blank" class="block w-full h-full">
+              <img
                 src="images/x_manga_plus.png"
                 alt="Cuenta de Manga Plus en X"
-            /></a>
+                class="w-full h-full object-cover"
+              />
+            </a>
           </li>
         </ul>
       </div>
 
-      <div class="text-white">
-        <h4>Contacto</h4>
-        <address>
-          <p>Correo: alvaro@gmail.com</p>
-          <p>Teléfono:123-123-123</p>
+      <div class="text-white mb-6">
+        <h4 class="text-xl font-bold mb-3">Contacto</h4>
+        <address class="not-italic space-y-1">
+          <p class="hover:text-amber-400 transition-colors">
+            <span class="font-semibold">Correo:</span> alvaro@gmail.com
+          </p>
+          <p class="hover:text-amber-400 transition-colors">
+            <span class="font-semibold">Teléfono:</span> 123-123-123
+          </p>
         </address>
       </div>
 
-      <div class="text-white">
-        <p>
+      <div class="text-white border-t border-red-800 pt-4">
+        <p class="text-sm mb-1">
           &copy; 2025 Dragon Ball Fan. Designed by Álvaro Contreras Ballesteros
         </p>
-        <p>
+        <p class="text-sm text-gray-300">
           Dragon Ball es propiedad de Akira Toriyama. Esta es una página fan.
         </p>
       </div>
