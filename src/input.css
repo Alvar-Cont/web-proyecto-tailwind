@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+.bottonRedesSociales {
+    @apply w-32 h-32 rounded-full shadow-lg hover:scale-110 hover:rotate-10 hover:shadow-amber-300 hover:shadow-md
+}
+.pancartaPelicula {
+    @apply bg-white p-5 rounded-lg shadow-md hover:shadow-xl hover:scale-105
+}
+.enlaceInteres{
+    @apply hover:translate-x-2 text-red-800 hover:text-red-600 font-medium underline;
+}
+.imagenPelicula {
+    @apply w-full h-48 rounded-lg shadow-lg mb-4
+}
+.tituloPelicula {
+    @apply text-xl font-bold text-red-800 mb-2
+}
+.anoPelicula {
+    @apply mb-2 text-sm
+}
+.negritaPelicula {
+    @apply font-bold text-red-900
+}
+.descripcionPelicula {
+    @apply text-gray-800 text-sm leading-relaxed
+}
